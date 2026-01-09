@@ -37,6 +37,7 @@ export default function LoginPage() {
                     <div>
                         <label style={{ display: "block", marginBottom: "0.5rem" }}>Email</label>
                         <input
+                            id="email"
                             name="email"
                             type="email"
                             required
@@ -46,6 +47,7 @@ export default function LoginPage() {
                     <div>
                         <label style={{ display: "block", marginBottom: "0.5rem" }}>Password</label>
                         <input
+                            id="password"
                             name="password"
                             type="password"
                             required
@@ -53,6 +55,7 @@ export default function LoginPage() {
                         />
                     </div>
                     <button
+                        id="login-submit"
                         type="submit"
                         className="btn btn-primary"
                         style={{ width: "100%", padding: "1rem" }}
