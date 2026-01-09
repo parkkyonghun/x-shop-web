@@ -1,6 +1,15 @@
 import { getOrderDetails } from "@/actions/order";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+// For static export, generate static params for all order IDs
+export async function generateStaticParams() {
+  // Return empty array to generate only the routes accessed at build time
+  // Or fetch order IDs from your data source:
+  // const orders = await getAllOrders();
+  // return orders.map((order) => ({ id: order.id }));
+  return [];
+}
+
 import styles from "./page.module.css";
 
 export default async function OrderDetailsPage({ params }: { params: Promise<{ id: string }> }) {
