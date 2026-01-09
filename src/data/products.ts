@@ -1,0 +1,58 @@
+import { Product } from "@/types";
+
+export const products: Product[] = [
+    {
+        id: "1",
+        name: "Neon Quantum Headset",
+        description: "Immersive audio experience with active noise cancellation and RBG lighting.",
+        price: 299.99,
+        category: "Electronics",
+        image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&q=80",
+        rating: 4.8,
+    },
+    {
+        id: "2",
+        name: "CyberWatch Series X",
+        description: "Advanced health tracking with holographic display interface.",
+        price: 399.99,
+        category: "Wearables",
+        image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&q=80",
+        rating: 4.6,
+    },
+    {
+        id: "3",
+        name: "ErgoMech Keypad",
+        description: "Split mechanical keyboard for ultimate programming efficiency.",
+        price: 159.00,
+        category: "Accessories",
+        image: "https://images.unsplash.com/photo-1587829741301-dc798b91add1?w=800&q=80",
+        rating: 4.9,
+    },
+    {
+        id: "4",
+        name: "Hololens Glasses",
+        description: "AR glasses that overlay digital information on the real world.",
+        price: 1200.00,
+        category: "Electronics",
+        image: "https://images.unsplash.com/photo-1572635196237-14b3f281e960?w=800&q=80",
+        rating: 4.5,
+    },
+    {
+        id: "5",
+        name: "Sonic Bass Speaker",
+        description: "Portable 360-degree sound with deep bass technology.",
+        price: 199.50,
+        category: "Audio",
+        image: "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=800&q=80",
+        rating: 4.7,
+    },
+    {
+        id: "6",
+        name: "Drone X1",
+        description: "4K camera drone with autonomous follow modes.",
+        price: 850.00,
+        category: "Drones",
+        image: "https://images.unsplash.com/photo-1507582020474-9a35b7d455d9?w=800&q=80",
+        rating: 4.8,
+    },
+];
