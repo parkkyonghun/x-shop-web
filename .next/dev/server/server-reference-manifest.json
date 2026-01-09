@@ -1,0 +1,145 @@
+{
+  "node": {
+    "00766229f63a44a872730efe1e0feaa1d4289745df": {
+      "workers": {
+        "app/cart/page": {
+          "moduleId": "[project]/.next-internal/server/app/cart/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/auth.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/actions/auth.ts"
+        },
+        "app/checkout/page": {
+          "moduleId": "[project]/.next-internal/server/app/checkout/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/order.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/actions/auth.ts"
+        },
+        "app/login/page": {
+          "moduleId": "[project]/.next-internal/server/app/login/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/auth.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/actions/auth.ts"
+        },
+        "app/orders/page": {
+          "moduleId": "[project]/.next-internal/server/app/orders/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/order.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/actions/auth.ts"
+        },
+        "app/page": {
+          "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/auth.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/actions/auth.ts"
+        },
+        "app/profile/page": {
+          "moduleId": "[project]/.next-internal/server/app/profile/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/auth.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/actions/auth.ts"
+        },
+        "app/register/page": {
+          "moduleId": "[project]/.next-internal/server/app/register/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/auth.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/actions/auth.ts"
+        }
+      },
+      "layer": {
+        "app/cart/page": "action-browser",
+        "app/checkout/page": "action-browser",
+        "app/login/page": "action-browser",
+        "app/orders/page": "action-browser",
+        "app/page": "action-browser",
+        "app/profile/page": "action-browser",
+        "app/register/page": "action-browser"
+      },
+      "filename": "src/actions/auth.ts",
+      "exportedName": "logoutAction"
+    },
+    "401b64592669d8b6343056f7797034589fc088627a": {
+      "workers": {
+        "app/login/page": {
+          "moduleId": "[project]/.next-internal/server/app/login/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/auth.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "loginAction",
+          "filename": "src/actions/auth.ts"
+        }
+      },
+      "layer": {
+        "app/login/page": "action-browser"
+      },
+      "filename": "src/actions/auth.ts",
+      "exportedName": "loginAction"
+    },
+    "00e0edced6cdbd5ccb811ebebafb446337c6f86eaa": {
+      "workers": {
+        "app/orders/page": {
+          "moduleId": "[project]/.next-internal/server/app/orders/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/order.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getOrders",
+          "filename": "src/actions/order.ts"
+        }
+      },
+      "layer": {
+        "app/orders/page": "rsc"
+      },
+      "filename": "src/actions/order.ts",
+      "exportedName": "getOrders"
+    },
+    "4049f0c173b612ecff8c472269ebcef229fc47af69": {
+      "workers": {
+        "app/orders/page": {
+          "moduleId": "[project]/.next-internal/server/app/orders/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/order.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getOrderDetails",
+          "filename": "src/actions/order.ts"
+        }
+      },
+      "layer": {
+        "app/orders/page": "rsc"
+      },
+      "filename": "src/actions/order.ts",
+      "exportedName": "getOrderDetails"
+    },
+    "60726f733c29519aeed8efc9e55389cb50906fd3a0": {
+      "workers": {
+        "app/checkout/page": {
+          "moduleId": "[project]/.next-internal/server/app/checkout/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/order.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "createOrder",
+          "filename": "src/actions/order.ts"
+        },
+        "app/orders/page": {
+          "moduleId": "[project]/.next-internal/server/app/orders/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/order.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "createOrder",
+          "filename": "src/actions/order.ts"
+        }
+      },
+      "layer": {
+        "app/checkout/page": "action-browser",
+        "app/orders/page": "rsc"
+      },
+      "filename": "src/actions/order.ts",
+      "exportedName": "createOrder"
+    },
+    "402a5287efec49b5c3f0fc6331e65a623b5b35edf4": {
+      "workers": {
+        "app/register/page": {
+          "moduleId": "[project]/.next-internal/server/app/register/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/auth.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "registerAction",
+          "filename": "src/actions/auth.ts"
+        }
+      },
+      "layer": {
+        "app/register/page": "action-browser"
+      },
+      "filename": "src/actions/auth.ts",
+      "exportedName": "registerAction"
+    }
+  },
+  "edge": {},
+  "encryptionKey": "lQUwcf3yallWTFywMxmHkdL4Y0DA3blwClQkNzFp7/w="
+}

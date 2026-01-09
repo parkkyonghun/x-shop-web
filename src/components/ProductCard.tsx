@@ -23,6 +23,7 @@ export default function ProductCard({ product }: ProductCardProps) {
                 <div className={styles.footer}>
                     <span className={styles.price}>${product.price}</span>
                     <button
+                        id={`add-to-cart-${product.id}`}
                         className="btn btn-primary"
                         onClick={() => addToCart(product)}
                     >

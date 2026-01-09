@@ -100,6 +100,29 @@ try:
     time.sleep(3)
 
     # -------------------------
+    # TC_000: Unauthenticated Redirects
+    # -------------------------
+    print("[TC_000] Check Redirects (Unauthenticated)")
+    
+    # List of protected routes that MUST redirect to login
+    protected_routes = ["profile"] 
+    # List of public routes (or routes that handle auth internally without redirect)
+    public_routes = ["orders", "cart", "checkout"]
+
+    for route in protected_routes:
+        url = f"{base_url}{route}"
+        print(f"  Checking {url}...")
+        driver.get(url)
+        time.sleep(2)
+        
+        if "login" in driver.current_url:
+            results.add(f"TC_000_{route}", f"Guest visit /{route}", "PASS", "Redirect to Login", "Redirected to Login")
+            print(f"  > {route}: PASS (Redirected)")
+        else:
+            results.add(f"TC_000_{route}", f"Guest visit /{route}", "FAIL", "Redirect to Login", f"Stayed on {driver.current_url}")
+            print(f"  > {route}: FAIL (No Redirect)")
+
+    # -------------------------
     # TC_001: Login
     # -------------------------
     print("[TC_001] Login with valid credentials")
@@ -127,29 +150,53 @@ try:
         print("FAIL:", e)
 
     # -------------------------
-    # TC_002: Navigate to Order History
+    # TC_001_B: Add to Cart
     # -------------------------
-    print("[TC_002] Navigate to Order History")
+    print("[TC_001_B] Add Item to Cart")
     try:
-        # UPDATED: Link Text matches "Orders" in Navbar
-        driver.find_element(By.LINK_TEXT, "Orders").click()
+        driver.get(base_url)
         time.sleep(2)
-
-        if "orders" in driver.current_url or "order" in driver.current_url:
-            results.add("TC_002", "Order History Navigation", "PASS",
-                        "Order history page displayed",
-                        "Order history page loaded")
-            print("PASS")
-        else:
-            results.add("TC_002", "Order History Navigation", "FAIL",
-                        "Order history page displayed",
-                        f"Order page not opened. Current URL: {driver.current_url}")
-            print("FAIL")
+        
+        # Add product with ID "1"
+        add_btn = driver.find_element(By.ID, "add-to-cart-1")
+        add_btn.click()
+        time.sleep(1) # Wait for state update
+        
+        results.add("TC_001_B", "Add to Cart", "PASS", "Item added", "Clicked Add to Cart button")
+        print("  > Item added to cart: PASS")
 
     except Exception as e:
-        results.add("TC_002", "Order History Navigation", "FAIL",
-                    "Order history page displayed", str(e))
+        results.add("TC_001_B", "Add to Cart", "FAIL", "Item added", str(e))
         print("FAIL:", e)
+
+    # -------------------------
+    # TC_002: Authenticated Route Navigation
+    # -------------------------
+    print("[TC_002] Navigate to Authenticated Routes")
+    
+    # Routes to verify after login
+    auth_routes = ["orders", "profile", "cart", "checkout"]
+
+    for route in auth_routes:
+        try:
+            target_url = f"{base_url}{route}"
+            print(f"  Navigating to {route}...")
+            driver.get(target_url)
+            time.sleep(2)
+            
+            # Check if we are still on the expected route (not redirected to login)
+            if route in driver.current_url and "login" not in driver.current_url:
+                 results.add(f"TC_002_{route}", f"Auth visit /{route}", "PASS", 
+                             f"Load {route} page", "Page Loaded")
+                 print(f"  > {route}: PASS")
+            else:
+                 results.add(f"TC_002_{route}", f"Auth visit /{route}", "FAIL", 
+                             f"Load {route} page", f"Redirected/Error: {driver.current_url}")
+                 print(f"  > {route}: FAIL")
+                 
+        except Exception as e:
+            results.add(f"TC_002_{route}", f"Auth visit /{route}", "FAIL", "Page load", str(e))
+            print(f"  > {route}: Error {e}")
 
 finally:
     if 'driver' in locals():

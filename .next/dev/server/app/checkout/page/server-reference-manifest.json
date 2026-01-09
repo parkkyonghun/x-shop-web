@@ -1,0 +1,35 @@
+{
+  "node": {
+    "00766229f63a44a872730efe1e0feaa1d4289745df": {
+      "workers": {
+        "app/checkout/page": {
+          "moduleId": "[project]/.next-internal/server/app/checkout/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/order.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/actions/auth.ts"
+        }
+      },
+      "layer": {
+        "app/checkout/page": "action-browser"
+      },
+      "exportedName": "logoutAction",
+      "filename": "src/actions/auth.ts"
+    },
+    "60726f733c29519aeed8efc9e55389cb50906fd3a0": {
+      "workers": {
+        "app/checkout/page": {
+          "moduleId": "[project]/.next-internal/server/app/checkout/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/order.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "createOrder",
+          "filename": "src/actions/order.ts"
+        }
+      },
+      "layer": {
+        "app/checkout/page": "action-browser"
+      },
+      "exportedName": "createOrder",
+      "filename": "src/actions/order.ts"
+    }
+  },
+  "edge": {}
+}

@@ -2,12 +2,17 @@ import Database from "better-sqlite3";
 import path from "path";
 import fs from "fs";
 
-const dbPath = path.join(process.cwd(), "x-shop.db");
+const isProduction = process.env.NODE_ENV === "production";
+const dbPath = isProduction
+  ? path.join("/tmp", "x-shop.db")
+  : path.join(process.cwd(), "x-shop.db");
 
 // Ensure db file exists
 if (!fs.existsSync(dbPath)) {
   fs.writeFileSync(dbPath, "");
 }
+
+console.log(`Using database at: ${dbPath}`);
 
 const db = new Database(dbPath);
 
@@ -116,7 +121,7 @@ if (productCount.count === 0) {
   ];
 
   const insertProduct = db.prepare(
-    "INSERT INTO products (id, name, description, price, category, image, rating) VALUES (@id, @name, @description, @price, @category, @image, @rating)"
+    "INSERT OR IGNORE INTO products (id, name, description, price, category, image, rating) VALUES (@id, @name, @description, @price, @category, @image, @rating)"
   );
 
   const insertMany = db.transaction((products) => {

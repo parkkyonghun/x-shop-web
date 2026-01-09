@@ -1,0 +1,72 @@
+/* [project]/src/components/Navbar.module.css [app-client] (css) */
+.Navbar-module__cJzEcG__navbar {
+  z-index: 1000;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  max-width: 1200px;
+  height: 70px;
+  padding: 0 2rem;
+  display: flex;
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.Navbar-module__cJzEcG__logo {
+  letter-spacing: -1px;
+  background: linear-gradient(to right, #ec4899, #6366f1);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.Navbar-module__cJzEcG__links {
+  gap: 2rem;
+  display: flex;
+}
+
+.Navbar-module__cJzEcG__link {
+  color: var(--muted);
+  font-weight: 500;
+  transition: color .3s;
+}
+
+.Navbar-module__cJzEcG__link:hover {
+  color: var(--foreground);
+}
+
+.Navbar-module__cJzEcG__actions {
+  align-items: center;
+  gap: 1.5rem;
+  display: flex;
+}
+
+.Navbar-module__cJzEcG__cartBtn {
+  cursor: pointer;
+  color: var(--foreground);
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  position: relative;
+}
+
+.Navbar-module__cJzEcG__badge {
+  background: var(--primary);
+  color: #fff;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 18px;
+  height: 18px;
+  font-size: .7rem;
+  font-weight: bold;
+  display: flex;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+}
+
+/*# sourceMappingURL=src_components_Navbar_module_css_bad6b30c._.single.css.map*/
