@@ -1,0 +1,65 @@
+{
+  "node": {
+    "002e10a5ce62c25926c80418bbc53ea91a20393242": {
+      "workers": {
+        "app/orders/page": {
+          "moduleId": 93944,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/actions/auth.ts"
+        }
+      },
+      "layer": {
+        "app/orders/page": "action-browser"
+      },
+      "exportedName": "logoutAction",
+      "filename": "src/actions/auth.ts"
+    },
+    "007a00cf52a3b74810ba00fcbbb6927cf1566dd493": {
+      "workers": {
+        "app/orders/page": {
+          "moduleId": 93944,
+          "async": false,
+          "exportedName": "getOrders",
+          "filename": "src/actions/order.ts"
+        }
+      },
+      "layer": {
+        "app/orders/page": "rsc"
+      },
+      "exportedName": "getOrders",
+      "filename": "src/actions/order.ts"
+    },
+    "40066862f07ea8b3f75ebb4e4bebc03707db0de0b2": {
+      "workers": {
+        "app/orders/page": {
+          "moduleId": 93944,
+          "async": false,
+          "exportedName": "getOrderDetails",
+          "filename": "src/actions/order.ts"
+        }
+      },
+      "layer": {
+        "app/orders/page": "rsc"
+      },
+      "exportedName": "getOrderDetails",
+      "filename": "src/actions/order.ts"
+    },
+    "6024d3f96e3f9c181c5f57eaa8049fc4190206b9b4": {
+      "workers": {
+        "app/orders/page": {
+          "moduleId": 93944,
+          "async": false,
+          "exportedName": "createOrder",
+          "filename": "src/actions/order.ts"
+        }
+      },
+      "layer": {
+        "app/orders/page": "rsc"
+      },
+      "exportedName": "createOrder",
+      "filename": "src/actions/order.ts"
+    }
+  },
+  "edge": {}
+}

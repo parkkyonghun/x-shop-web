@@ -1,0 +1,180 @@
+{
+  "node": {
+    "002e10a5ce62c25926c80418bbc53ea91a20393242": {
+      "workers": {
+        "app/_not-found/page": {
+          "moduleId": 9452,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/actions/auth.ts"
+        },
+        "app/cart/page": {
+          "moduleId": 39658,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/actions/auth.ts"
+        },
+        "app/checkout/page": {
+          "moduleId": 75594,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/actions/auth.ts"
+        },
+        "app/login/page": {
+          "moduleId": 3070,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/actions/auth.ts"
+        },
+        "app/orders/[id]/page": {
+          "moduleId": 80809,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/actions/auth.ts"
+        },
+        "app/orders/page": {
+          "moduleId": 93944,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/actions/auth.ts"
+        },
+        "app/page": {
+          "moduleId": 27404,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/actions/auth.ts"
+        },
+        "app/profile/page": {
+          "moduleId": 32516,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/actions/auth.ts"
+        },
+        "app/register/page": {
+          "moduleId": 74262,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/actions/auth.ts"
+        }
+      },
+      "layer": {
+        "app/_not-found/page": "action-browser",
+        "app/cart/page": "action-browser",
+        "app/checkout/page": "action-browser",
+        "app/login/page": "action-browser",
+        "app/orders/[id]/page": "action-browser",
+        "app/orders/page": "action-browser",
+        "app/page": "action-browser",
+        "app/profile/page": "action-browser",
+        "app/register/page": "action-browser"
+      },
+      "filename": "src/actions/auth.ts",
+      "exportedName": "logoutAction"
+    },
+    "6024d3f96e3f9c181c5f57eaa8049fc4190206b9b4": {
+      "workers": {
+        "app/checkout/page": {
+          "moduleId": 75594,
+          "async": false,
+          "exportedName": "createOrder",
+          "filename": "src/actions/order.ts"
+        },
+        "app/orders/[id]/page": {
+          "moduleId": 80809,
+          "async": false,
+          "exportedName": "createOrder",
+          "filename": "src/actions/order.ts"
+        },
+        "app/orders/page": {
+          "moduleId": 93944,
+          "async": false,
+          "exportedName": "createOrder",
+          "filename": "src/actions/order.ts"
+        }
+      },
+      "layer": {
+        "app/checkout/page": "action-browser",
+        "app/orders/[id]/page": "rsc",
+        "app/orders/page": "rsc"
+      },
+      "filename": "src/actions/order.ts",
+      "exportedName": "createOrder"
+    },
+    "40d6b6503b5af92871b196b1dfc951f91b9ff72a22": {
+      "workers": {
+        "app/login/page": {
+          "moduleId": 3070,
+          "async": false,
+          "exportedName": "loginAction",
+          "filename": "src/actions/auth.ts"
+        }
+      },
+      "layer": {
+        "app/login/page": "action-browser"
+      },
+      "filename": "src/actions/auth.ts",
+      "exportedName": "loginAction"
+    },
+    "007a00cf52a3b74810ba00fcbbb6927cf1566dd493": {
+      "workers": {
+        "app/orders/[id]/page": {
+          "moduleId": 80809,
+          "async": false,
+          "exportedName": "getOrders",
+          "filename": "src/actions/order.ts"
+        },
+        "app/orders/page": {
+          "moduleId": 93944,
+          "async": false,
+          "exportedName": "getOrders",
+          "filename": "src/actions/order.ts"
+        }
+      },
+      "layer": {
+        "app/orders/[id]/page": "rsc",
+        "app/orders/page": "rsc"
+      },
+      "filename": "src/actions/order.ts",
+      "exportedName": "getOrders"
+    },
+    "40066862f07ea8b3f75ebb4e4bebc03707db0de0b2": {
+      "workers": {
+        "app/orders/[id]/page": {
+          "moduleId": 80809,
+          "async": false,
+          "exportedName": "getOrderDetails",
+          "filename": "src/actions/order.ts"
+        },
+        "app/orders/page": {
+          "moduleId": 93944,
+          "async": false,
+          "exportedName": "getOrderDetails",
+          "filename": "src/actions/order.ts"
+        }
+      },
+      "layer": {
+        "app/orders/[id]/page": "rsc",
+        "app/orders/page": "rsc"
+      },
+      "filename": "src/actions/order.ts",
+      "exportedName": "getOrderDetails"
+    },
+    "40ba19e1d068b521b6d8eb763d986b8d5cb6e7d174": {
+      "workers": {
+        "app/register/page": {
+          "moduleId": 74262,
+          "async": false,
+          "exportedName": "registerAction",
+          "filename": "src/actions/auth.ts"
+        }
+      },
+      "layer": {
+        "app/register/page": "action-browser"
+      },
+      "filename": "src/actions/auth.ts",
+      "exportedName": "registerAction"
+    }
+  },
+  "edge": {},
+  "encryptionKey": "f11k4Q8TdzdNCMsLujAVHhk52yXozgoI39emQuxtPZg="
+}

@@ -1,0 +1,35 @@
+{
+  "node": {
+    "002e10a5ce62c25926c80418bbc53ea91a20393242": {
+      "workers": {
+        "app/checkout/page": {
+          "moduleId": 75594,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/actions/auth.ts"
+        }
+      },
+      "layer": {
+        "app/checkout/page": "action-browser"
+      },
+      "exportedName": "logoutAction",
+      "filename": "src/actions/auth.ts"
+    },
+    "6024d3f96e3f9c181c5f57eaa8049fc4190206b9b4": {
+      "workers": {
+        "app/checkout/page": {
+          "moduleId": 75594,
+          "async": false,
+          "exportedName": "createOrder",
+          "filename": "src/actions/order.ts"
+        }
+      },
+      "layer": {
+        "app/checkout/page": "action-browser"
+      },
+      "exportedName": "createOrder",
+      "filename": "src/actions/order.ts"
+    }
+  },
+  "edge": {}
+}
